@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
+
 # Page configuration
 st.set_page_config(
     page_title="Dengue Hotspot Heatmap - Metro Manila",
@@ -345,11 +346,4 @@ st.markdown("""
         <a href='https://www.kaggle.com/datasets/' target='_blank'>https://www.kaggle.com/datasets/</a></p>
         <p>Dashboard created for Health Informatics (ITE3) | Engr. Val Patrick Fabregas, MTA</p>
     </div>
-
 """, unsafe_allow_html=True)
-
-
-
-
-
-
