@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import plotly.express as px
-from datetime import datetime, timedelta
-
+import plotly.graph_objects as go
+from datetime import datetime
 # Page configuration
 st.set_page_config(
     page_title="Dengue Hotspot Heatmap - Metro Manila",
@@ -348,6 +347,7 @@ st.markdown("""
     </div>
 
 """, unsafe_allow_html=True)
+
 
 
 
