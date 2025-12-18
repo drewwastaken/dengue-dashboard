@@ -346,4 +346,5 @@ st.markdown("""
         <a href='https://www.kaggle.com/datasets/' target='_blank'>https://www.kaggle.com/datasets/</a></p>
         <p>Dashboard created for Health Informatics (ITE3) | Engr. Val Patrick Fabregas, MTA</p>
     </div>
+
 """, unsafe_allow_html=True)
