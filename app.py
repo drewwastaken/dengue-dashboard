@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
@@ -366,3 +367,4 @@ st.markdown("""
         <p>Dashboard created for Health Informatics (ITE3) | Engr. Val Patrick Fabregas, MTA</p>
     </div>
 """, unsafe_allow_html=True)
+
