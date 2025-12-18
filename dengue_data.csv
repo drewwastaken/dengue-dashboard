@@ -1,0 +1,155 @@
+Month,Year,City,Region,Dengue_Cases,Dengue_Deaths
+January,2019,Quezon City,NCR,476,2
+January,2019,Manila,NCR,390,1
+January,2019,Caloocan,NCR,245,1
+January,2019,Pasig,NCR,194,0
+January,2019,Taguig,NCR,163,0
+January,2019,Marikina,NCR,151,0
+January,2019,Mandaluyong,NCR,122,0
+January,2019,Makati,NCR,102,0
+January,2019,Muntinlupa,NCR,102,0
+January,2019,Las Piñas,NCR,86,0
+January,2019,Parañaque,NCR,81,0
+February,2019,Quezon City,NCR,537,2
+February,2019,Manila,NCR,439,1
+February,2019,Caloocan,NCR,276,1
+February,2019,Pasig,NCR,219,0
+February,2019,Taguig,NCR,184,0
+February,2019,Marikina,NCR,171,0
+February,2019,Mandaluyondo,NCR,138,0
+February,2019,Makati,NCR,115,0
+February,2019,Muntinlupa,NCR,115,0
+February,2019,Las Piñas,NCR,97,0
+February,2019,Parañaque,NCR,92,0
+March,2019,Quezon City,NCR,315,0
+March,2019,Manila,NCR,257,0
+March,2019,Caloocan,NCR,162,0
+March,2019,Pasig,NCR,129,0
+March,2019,Taguig,NCR,108,0
+March,2019,Marikina,NCR,100,0
+March,2019,Mandaluyong,NCR,81,0
+March,2019,Makati,NCR,67,0
+March,2019,Muntinlupa,NCR,68,0
+March,2019,Las Piñas,NCR,57,0
+March,2019,Parañaque,NCR,54,0
+April,2019,Quezon City,NCR,121,0
+April,2019,Manila,NCR,99,0
+April,2019,Caloocan,NCR,63,0
+April,2019,Pasig,NCR,50,0
+April,2019,Taguig,NCR,42,0
+April,2019,Marikina,NCR,39,0
+April,2019,Mandaluyong,NCR,31,0
+April,2019,Makati,NCR,26,0
+April,2019,Muntinlupa,NCR,26,0
+April,2019,Las Piñas,NCR,22,0
+April,2019,Parañaque,NCR,21,0
+May,2019,Quezon City,NCR,101,0
+May,2019,Manila,NCR,83,0
+May,2019,Caloocan,NCR,52,0
+May,2019,Pasig,NCR,41,0
+May,2019,Taguig,NCR,35,0
+May,2019,Marikina,NCR,32,0
+May,2019,Mandaluyong,NCR,26,0
+May,2019,Makati,NCR,22,0
+May,2019,Muntinlupa,NCR,22,0
+May,2019,Las Piñas,NCR,18,0
+May,2019,Parañaque,NCR,17,0
+June,2019,Quezon City,NCR,187,0
+June,2019,Manila,NCR,153,0
+June,2019,Caloocan,NCR,96,0
+June,2019,Pasig,NCR,76,0
+June,2019,Taguig,NCR,64,0
+June,2019,Marikina,NCR,59,0
+June,2019,Mandaluyong,NCR,48,0
+June,2019,Makati,NCR,40,0
+June,2019,Muntinlupa,NCR,40,0
+June,2019,Las Piñas,NCR,34,0
+June,2019,Parañaque,NCR,32,0
+July,2019,Quezon City,NCR,421,3
+July,2019,Manila,NCR,344,2
+July,2019,Caloocan,NCR,216,1
+July,2019,Pasig,NCR,172,1
+July,2019,Taguig,NCR,144,1
+July,2019,Marikina,NCR,134,0
+July,2019,Mandaluyong,NCR,108,0
+July,2019,Makati,NCR,90,0
+July,2019,Muntinlupa,NCR,90,0
+July,2019,Las Piñas,NCR,76,0
+July,2019,Parañaque,NCR,72,0
+August,2019,Quezon City,NCR,1254,7
+August,2019,Manila,NCR,1025,6
+August,2019,Caloocan,NCR,645,4
+August,2019,Pasig,NCR,513,3
+August,2019,Taguig,NCR,429,2
+August,2019,Marikina,NCR,399,2
+August,2019,Mandaluyong,NCR,322,2
+August,2019,Makati,NCR,269,1
+August,2019,Muntinlupa,NCR,269,1
+August,2019,Las Piñas,NCR,227,1
+August,2019,Parañaque,NCR,215,1
+September,2019,Quezon City,NCR,2525,12
+September,2019,Manila,NCR,2064,10
+September,2019,Caloocan,NCR,1299,6
+September,2019,Pasig,NCR,1033,5
+September,2019,Taguig,NCR,864,4
+September,2019,Marikina,NCR,804,4
+September,2019,Mandaluyong,NCR,648,3
+September,2019,Makati,NCR,541,2
+September,2019,Muntinlupa,NCR,541,2
+September,2019,Las Piñas,NCR,457,2
+September,2019,Parañaque,NCR,432,2
+October,2019,Quezon City,NCR,1550,5
+October,2019,Manila,NCR,1267,4
+October,2019,Caloocan,NCR,797,3
+October,2019,Pasig,NCR,634,2
+October,2019,Taguig,NCR,530,2
+October,2019,Marikina,NCR,493,1
+October,2019,Mandaluyong,NCR,398,1
+October,2019,Makati,NCR,332,1
+October,2019,Muntinlupa,NCR,332,1
+October,2019,Las Piñas,NCR,281,0
+October,2019,Parañaque,NCR,265,0
+November,2019,Quezon City,NCR,1028,2
+November,2019,Manila,NCR,840,2
+November,2019,Caloocan,NCR,528,1
+November,2019,Pasig,NCR,420,1
+November,2019,Taguig,NCR,351,0
+November,2019,Marikina,NCR,327,0
+November,2019,Mandaluyong,NCR,264,0
+November,2019,Makati,NCR,220,0
+November,2019,Muntinlupa,NCR,220,0
+November,2019,Las Piñas,NCR,186,0
+November,2019,Parañaque,NCR,176,0
+December,2019,Quezon City,NCR,745,3
+December,2019,Manila,NCR,609,2
+December,2019,Caloocan,NCR,383,1
+December,2019,Pasig,NCR,305,1
+December,2019,Taguig,NCR,255,1
+December,2019,Marikina,NCR,237,1
+December,2019,Mandaluyong,NCR,191,0
+December,2019,Makati,NCR,160,0
+December,2019,Muntinlupa,NCR,160,0
+December,2019,Las Piñas,NCR,135,0
+December,2019,Parañaque,NCR,128,0
+January,2020,Quezon City,NCR,533,2
+January,2020,Manila,NCR,435,1
+January,2020,Caloocan,NCR,274,1
+January,2020,Pasig,NCR,218,0
+January,2020,Taguig,NCR,182,0
+January,2020,Marikina,NCR,169,0
+January,2020,Mandaluyong,NCR,137,0
+January,2020,Makati,NCR,114,0
+January,2020,Muntinlupa,NCR,114,0
+January,2020,Las Piñas,NCR,96,0
+January,2020,Parañaque,NCR,91,0
+February,2020,Quezon City,NCR,456,1
+February,2020,Manila,NCR,373,1
+February,2020,Caloocan,NCR,234,0
+February,2020,Pasig,NCR,186,0
+February,2020,Taguig,NCR,156,0
+February,2020,Marikina,NCR,145,0
+February,2020,Mandaluyong,NCR,117,0
+February,2020,Makati,NCR,98,0
+February,2020,Muntinlupa,NCR,98,0
+February,2020,Las Piñas,NCR,83,0
+February,2020,Parañaque,NCR,78,0
