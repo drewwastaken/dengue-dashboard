@@ -34,35 +34,49 @@ st.markdown("""
 # Load data
 @st.cache_data
 def load_data():
-    # Load your CSV file
-    df = pd.read_csv('dengue_data.csv')
-    
-    # Add coordinates for mapping (approximate city centers)
-    coords = {
-        'Quezon City': {'lat': 14.6760, 'lon': 121.0437},
-        'Manila': {'lat': 14.5995, 'lon': 120.9842},
-        'Caloocan': {'lat': 14.6508, 'lon': 120.9830},
-        'Pasig': {'lat': 14.5764, 'lon': 121.0851},
-        'Taguig': {'lat': 14.5176, 'lon': 121.0509},
-        'Marikina': {'lat': 14.6507, 'lon': 121.1029},
-        'Mandaluyong': {'lat': 14.5794, 'lon': 121.0359},
-        'Makati': {'lat': 14.5547, 'lon': 121.0244},
-        'Muntinlupa': {'lat': 14.4083, 'lon': 121.0399},
-        'Las Piñas': {'lat': 14.4454, 'lon': 120.9830},
-        'Parañaque': {'lat': 14.4793, 'lon': 121.0198}
-    }
-    
-    # Clean city names (fix any typos)
-    df['City'] = df['City'].str.strip()
-    df['City'] = df['City'].replace('Mandaluyondo', 'Mandaluyong')
-    
-    df['Latitude'] = df['City'].map(lambda x: coords.get(x, {}).get('lat', 14.5995))
-    df['Longitude'] = df['City'].map(lambda x: coords.get(x, {}).get('lon', 120.9842))
-    df['Date'] = pd.to_datetime(df['Year'].astype(str) + '-' + df['Month'], format='%Y-%B')
-    
-    return df
+    try:
+        # Load your CSV file
+        df = pd.read_csv('dengue_data.csv')
+        
+        # Add coordinates for mapping (approximate city centers)
+        coords = {
+            'Quezon City': {'lat': 14.6760, 'lon': 121.0437},
+            'Manila': {'lat': 14.5995, 'lon': 120.9842},
+            'Caloocan': {'lat': 14.6508, 'lon': 120.9830},
+            'Pasig': {'lat': 14.5764, 'lon': 121.0851},
+            'Taguig': {'lat': 14.5176, 'lon': 121.0509},
+            'Marikina': {'lat': 14.6507, 'lon': 121.1029},
+            'Mandaluyong': {'lat': 14.5794, 'lon': 121.0359},
+            'Makati': {'lat': 14.5547, 'lon': 121.0244},
+            'Muntinlupa': {'lat': 14.4083, 'lon': 121.0399},
+            'Las Piñas': {'lat': 14.4454, 'lon': 120.9830},
+            'Parañaque': {'lat': 14.4793, 'lon': 121.0198}
+        }
+        
+        # Clean city names (fix any typos)
+        df['City'] = df['City'].str.strip()
+        df['City'] = df['City'].replace('Mandaluyondo', 'Mandaluyong')
+        
+        df['Latitude'] = df['City'].map(lambda x: coords.get(x, {}).get('lat', 14.5995))
+        df['Longitude'] = df['City'].map(lambda x: coords.get(x, {}).get('lon', 120.9842))
+        
+        # Convert Year and Month to datetime
+        df['Date'] = pd.to_datetime(df['Year'].astype(str) + '-' + df['Month'], format='%Y-%B', errors='coerce')
+        
+        return df
+    except FileNotFoundError:
+        st.error("❌ Error: 'dengue_data.csv' file not found. Please make sure the file is in the same directory as this script.")
+        st.stop()
+    except Exception as e:
+        st.error(f"❌ Error loading data: {str(e)}")
+        st.stop()
 
 df = load_data()
+
+# Check if dataframe is empty
+if df.empty:
+    st.error("❌ The dataset is empty. Please check your CSV file.")
+    st.stop()
 
 # Header
 st.markdown('<p class="main-header">🦟 Dengue Hotspot Heatmap: Metro Manila</p>', unsafe_allow_html=True)
@@ -114,6 +128,11 @@ filtered_df = df[
     (df['City'].isin(selected_cities)) &
     (df['Dengue_Cases'] >= case_threshold)
 ]
+
+# Check if filtered data is empty
+if filtered_df.empty:
+    st.warning("⚠️ No data matches your current filter selection. Please adjust the filters.")
+    st.stop()
 
 # Key Metrics
 st.markdown("### 📊 Key Metrics")
